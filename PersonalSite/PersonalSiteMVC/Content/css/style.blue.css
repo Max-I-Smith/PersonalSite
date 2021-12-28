@@ -2815,6 +2815,7 @@ code {
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
   background-color: #fff;
+  padding: 2px;
 }
 
 .nav-tabs .dropdown-menu {

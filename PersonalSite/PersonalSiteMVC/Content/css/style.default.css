@@ -1931,6 +1931,7 @@ body {
 }
 
 a {
+    padding: 5px;
   color: #fbd214;
   text-decoration: none;
 }
