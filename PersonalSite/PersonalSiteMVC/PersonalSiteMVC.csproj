@@ -121,6 +121,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ClassmateController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\EducationController.cs" />
+    <Compile Include="Controllers\ExperienceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -152,7 +155,6 @@
     <Content Include="Content\css\style.yellow.min.css" />
     <Content Include="Content\img\amberMills.png" />
     <Content Include="Content\img\Ant-millan.png" />
-    <Content Include="Content\img\author.jpg" />
     <Content Include="Content\img\cqclass-allen.chris.jpg" />
     <Content Include="Content\img\cqclass-owens.josh.png" />
     <Content Include="Content\img\diplacito.lynn.png" />
@@ -224,6 +226,9 @@
     <Content Include="Views\Shared\_OriginalLayout.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
     <Content Include="Views\Classmate\Index.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Education\Index.cshtml" />
+    <Content Include="Views\Experience\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
