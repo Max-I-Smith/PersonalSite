@@ -8,13 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="Content/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/vendor/bootstrap/css/bootstrap.min.css">
     <!-- Google fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,800&amp;display=swap">
     <!-- theme stylesheet-->
-    <link rel="stylesheet" href="Content/css/style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="~/Content/css/style.default.css" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="Content/css/custom.css">
+    <link rel="stylesheet" href="~/Content/css/custom.css">
     <!-- Favicon-->
     @*<link rel="shortcut icon" href="Content/img/favicon.png">*@
     <!-- Tweaks for older IEs-->
@@ -36,7 +36,8 @@
                         <li class="nav-item"><a href="@Url.Action("Index","Classmate")">Classmates </a></li>
                         <li class="nav-item"><a href="@Url.Action("Index","Education")">Education </a></li>
                         <li class="nav-item"><a href="@Url.Action("Index","Experience")">Experience </a></li>
-                        <li class="nav-item"><a href="@Url.Action("Index","Contact")">Contact</a></li>
+                        <li class="nav-item"><a href="@Url.Action("Contact","Contact")">Contact</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -54,6 +55,7 @@
                     <h2 class="text-uppercase mb-0">Max Smith</h2>
                     <h6 class="text-primary text-uppercase mb-0 letter-spacing-3">Full Stack Web Developer</h6>
                     <p class="text-muted my-4">Please Contact me if you are interested</p>
+                    <a href="~/Content/MaxSmithResume.pdf" download="~/Content/MaxSmithResume.pdf">Here's my Resume</a>
                 </div>
             </div>
         </div>
@@ -65,9 +67,10 @@
     </footer>
    
     <!-- JavaScript files-->
-    <script src="Content/vendor/jquery/jquery.min.js"></script>
-    <script src="Content/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="Content/js/front.js"></script>
+    @RenderSection("scripts",required:false)
+    <script src="~/Content/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Content/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/js/front.js"></script>
     <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </body>

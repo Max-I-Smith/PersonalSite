@@ -129,6 +129,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContactViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -198,6 +199,8 @@
     <Content Include="Content\css\style.yellow.min.css.map" />
     <Content Include="Content\vendor\jquery.cookie\component.json" />
     <Content Include="Content\vendor\jquery.cookie\cookie.jquery.json" />
+    <Content Include="Content\MaxSmithResume.pdf" />
+    <Content Include="configs\AppSecrectKeys.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -226,14 +229,14 @@
     <Content Include="Views\Shared\_OriginalLayout.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
     <Content Include="Views\Classmate\Index.cshtml" />
-    <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Education\Index.cshtml" />
     <Content Include="Views\Experience\Index.cshtml" />
+    <Content Include="Views\Contact\Contact.cshtml" />
+    <Content Include="Views\Contact\EmailConfirmation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\vendor\jquery.cookie\test\" />
-    <Folder Include="Models\" />
     <Folder Include="_Archive\" />
   </ItemGroup>
   <ItemGroup>
