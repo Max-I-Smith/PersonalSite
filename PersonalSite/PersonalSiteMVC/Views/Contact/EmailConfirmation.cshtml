@@ -4,10 +4,10 @@
     ViewBag.Title = "EmailConfirmation";
 }
 
-<h2>EmailConfirmation</h2>
+<h2>Email Confirmation</h2>
 
-<div>
-    <h4>ContactViewModel</h4>
+<div class="text-center">
+
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -27,6 +27,14 @@
         </dd>
 
         <dt>
+            @Html.DisplayNameFor(model => model.Subject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subject)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.Message)
         </dt>
 
@@ -36,7 +44,3 @@
 
     </dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

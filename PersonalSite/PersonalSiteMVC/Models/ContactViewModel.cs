@@ -13,7 +13,7 @@ namespace PersonalSiteMVC.Models
         [Required(ErrorMessage = "Your email address is required.")]
         [EmailAddress]
         public string Email { get; set; }
-        
+        public string Subject { get; set; }
         [UIHint("MultilineText")]
         [Required(ErrorMessage = "A Message is required.")]
         public string Message { get; set; }
